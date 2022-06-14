@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="counter">
+    <span id="counter">0</span><br>
+    <button onclick="add()">Increase</button>
+    <button onclick="sub()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+
+  
+  <script>
+    count=0;
+let counter = document.getElementById("counter");
+
+function add(){
+  count++;
+  // console.log(count);
+  counter.innerHTML=count;
+}
+function sub(){
+  if(count>0){
+    count--;
+  counter.innerHTML = count;
+  }
+  else(count = 0)
+}
+
+function reset(){
+  count =0;
+  counter.innerHTML = 0;
+}
+  </script>
+</body>
+
+</html>
